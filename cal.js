@@ -1,6 +1,4 @@
 console.log("Hello World")
-const Pi = 3.14;
-
 let string = "";
 
 let button = document.querySelectorAll("#btn");
@@ -13,10 +11,15 @@ Array.from(button).forEach((btn) => {
             if (event.target.innerText == `C`) {
                 string = ""
                 document.querySelector(`input`).value = string;
+            } else 
+            if (event.target.innerText == `DEL`) {
+                string =string.substring(0,string.length-1);
+                document.querySelector(`input`).value = string;
             } else {
                 string = string + event.target.innerText;
-                console.log(event.target)
+                // console.log(event.target)
                 document.querySelector(`input`).value = string;
             }
     })
 })
+

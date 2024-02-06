@@ -1,7 +1,6 @@
 * {
     margin: 0;
     font-family: 'Noto Serif', serif;
-
 }
 
 .bg {
@@ -14,6 +13,8 @@
     background-color: orange;
     height: 50%;
     width: 50%;
+    max-width: 400px;
+    max-height: 400px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -22,28 +23,58 @@
 }
 
 .res {
-    margin: 15px ;
+    margin: 15px;
+}
+
+input {
+    /* border: 2px solid rgb(255, 85, 0); */
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
 }
 
 .row {
-    align-items: center;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 h1 {
-    padding: 5% 0;
+    padding: 15px 0;
     text-align: center;
 }
-button{
-    border-radius: 7px;
-    margin: 0px 3px;
+
+button {
+    border-radius: 5px;
+    margin: 0px 4px;
     padding: 5px 10px;
-     background-color: blanchedalmond;
+    background-color: blanchedalmond;
+    border: none;
+    font-weight: 600;
 }
-button:hover{
-    background-color: rgb(0, 255, 30);
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
 }
-input{
-    padding: 4px 0px;
+
+input {
+    padding: 4px 8px;
     text-align: right;
+    text-rendering: geometricPrecision;
+    height: 30px;
+    text-justify: auto;
+}
+.spc{
+  background-color: rgb(247, 131, 36);
+}
+.sp{
+  background-color: rgb(255, 115, 0);
+}
+.sp:hover,.spc:hover{
+    background-color: rgb(255, 204, 109);
+}
+
+@media screen and (max-width:500px) {
+    .outer {
+        width: 60%;
+    }
 }
